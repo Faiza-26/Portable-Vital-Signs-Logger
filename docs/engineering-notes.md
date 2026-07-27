@@ -101,3 +101,15 @@ OLED successfully displayed the graphics demo
 ## Lessons Learned
 Do not assume the example code uses the correct I²C address
 Always verify addresses using an I²C scanner
+
+
+
+## July 27
+# Objective:
+Reconnect with the project after a short break
+# Completed:
+- Reviewed repository structure
+- Reviewed previous debugging notes
+- Began replacing the OLED demo with a custom startup screen
+# Next:
+Write custom OLED code and return to debugging the MAX30102.

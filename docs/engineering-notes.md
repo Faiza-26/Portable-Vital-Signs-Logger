@@ -105,11 +105,33 @@ Always verify addresses using an I²C scanner
 
 
 ## July 27
-# Objective:
+### Objective:
 Reconnect with the project after a short break
-# Completed:
+### Completed:
 - Reviewed repository structure
 - Reviewed previous debugging notes
 - Began replacing the OLED demo with a custom startup screen
-# Next:
-Write custom OLED code and return to debugging the MAX30102.
+### Next:
+Write custom OLED code and return to debugging the MAX30102
+
+
+
+## July 28
+### Objective
+Create a custom startup interface for the OLED display
+### Completed
+- Modified the Adafruit SSD1306 example
+- Created a custom startup screen
+- Learned how to create and call custom functions
+- Added multiple startup screens using delays
+- Successfully displayed:
+    - Portable Vitals Logger
+    - ASU Electrical Engineering
+### Lessons Learned
+- Functions help organize embedded software
+- I2C scanner confirmed OLED address was 0x3C
+- Embedded systems often display information as a sequence of screens
+### Next Steps
+- Add an initialization screen
+- Connect the MAX30102
+- Display live sensor values

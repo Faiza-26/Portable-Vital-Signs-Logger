@@ -10,20 +10,22 @@ An Arduino-based embedded systems project that measures heart rate and blood oxy
 
 ## Status and Current Progress
 
-✅ GitHub setup
-
 ✅ Arduino Nano configured
 
-✅ Blink uploaded
+✅ GitHub project created
 
-✅ OLED working
+✅ OLED display wired
 
-✅ I²C scanner used successfully
+✅ OLED startup interface created
 
-⏳ MAX30102 hardware issue
+✅ Multiple display screens implemented
 
-⬜ Display heart rate
+✅ I²C debugging completed
+
+⏳ MAX30102 stabilization
+
+⬜ Live heart-rate display
 
 ⬜ SD card logging
 
-⬜ Python analysis
+⬜ Python visualization

@@ -15,7 +15,6 @@ An Arduino-based embedded systems project that measures heart rate and blood oxy
 
 ## Current Prototype
 The current prototype integrates an Arduino Nano, SSD1306 OLED display, and MAX30102 optical sensor over a shared I²C bus. The system initializes through a custom startup interface before displaying live Red, IR, and Green sensor readings in real time
-![OLED Live Sensor](images/fullrun1_wiring.jpg)
 
 ### In Progress
 - ⏳ Heart rate (BPM) calculation

@@ -135,3 +135,33 @@ Create a custom startup interface for the OLED display
 - Add an initialization screen
 - Connect the MAX30102
 - Display live sensor values
+
+
+
+# July 29, 2026
+## Objective
+Integrate the MAX30102 pulse oximeter and OLED display into a single embedded system capable of displaying live sensor data
+---
+## Completed
+- Connected the MAX30102 and OLED to the same I²C bus
+- Verified both devices using the I²C scanner
+  - OLED detected at address **0x3C**
+  - MAX30102 detected at address **0x57**
+- Combined the OLED display code with the MAX30102 Basic Readings example
+- Initialized both peripherals in the same Arduino sketch
+- Successfully read live Red, IR, and Green sensor values
+- Displayed the live sensor values on the OLED in real time
+---
+## Challenges
+- Learned how multiple I²C devices share the same SDA and SCL lines
+- Worked through integrating two separate example programs into one sketch while keeping the code organized
+---
+## Lessons Learned
+- Multiple I²C devices can communicate on the same bus as long as each has a unique address
+- Initializing hardware in `setup()` and updating live data in `loop()` creates a clean software structure
+- Separating the display logic into its own function makes the program easier to expand and maintain
+---
+## Next Steps
+- Replace raw Red, IR, and Green values with calculated heart rate (BPM)
+- Display live BPM on the OLED
+- Begin integrating SpO₂ calculations into the project

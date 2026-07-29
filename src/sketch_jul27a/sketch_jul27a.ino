@@ -57,6 +57,9 @@ static const unsigned char PROGMEM logo_bmp[] =
   0b01110000, 0b01110000,
   0b00000000, 0b00110000 };
 
+int bpm = 101;
+int spo2 = 95;
+
 void setup() {
   Serial.begin(9600);
 
@@ -92,11 +95,15 @@ void setup() {
 
   // display.display();  
   screen1();
-
   delay(2000);
 
   screen2();
+  delay(2000);
 
+  screen3();
+  delay(2000);
+
+  screen4();
   delay(2000);
 
   // Draw a single pixel in white
@@ -184,6 +191,41 @@ void screen2() {
 
   display.display();
 
+}
+
+void screen3() {
+
+  display.clearDisplay();
+  display.setTextSize(2);
+  display.setTextColor(SSD1306_WHITE);
+
+  display.setCursor(0,0);
+  display.println("Heart");
+  display.println("Rate");
+
+  // display.setTextSize(2);
+  display.setCursor(0,40);
+  display.print(bpm);
+  display.println(" BPM");
+
+  display.display();
+
+}
+
+void screen4() {
+  display.clearDisplay();
+  display.setTextSize(2);
+  display.setTextColor(SSD1306_WHITE);
+
+  display.setCursor(0,0);
+  display.println("SpO2");
+
+  // display.setTextSize(2);
+  display.setCursor(0,40);
+  display.print(spo2);
+  display.println("%");
+
+  display.display();
 }
 
 void loop() {

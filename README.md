@@ -2,30 +2,25 @@
 
 An Arduino-based embedded systems project that measures heart rate and blood oxygen using a MAX30102 sensor, displays the data on an OLED display, logs readings to an SD card, and analyzes the data using Python.
 
-## Hardware
-- Arduino Nano
-- MAX30102 Pulse Oximeter
-- SSD1306 OLED Display
-- MicroSD Card Module
+### Hardware
+- ✅ Arduino Nano
+- ✅ SSD1306 OLED Display
+- ✅ MAX30102 Pulse Oximeter
+- ✅ Shared I²C Bus Configured
+
+### Software
+- ✅ Custom startup interface
+- ✅ Multi-screen OLED interface
+- ✅ Live sensor communication
+- ✅ Real-time Red, IR, and Green values displayed
 
 ## Status and Current Progress
 
-✅ Arduino Nano configured
+### In Progress
+- ⏳ Heart rate (BPM) calculation
+- ⏳ SpO₂ calculation
 
-✅ GitHub project created
-
-✅ OLED display wired
-
-✅ OLED startup interface created
-
-✅ Multiple display screens implemented
-
-✅ I²C debugging completed
-
-⏳ MAX30102 stabilization
-
-⬜ Live heart-rate display
-
-⬜ SD card logging
-
-⬜ Python visualization
+### Future Features
+- ⬜ SD card logging
+- ⬜ Python data visualization
+- ⬜ Wearable enclosure

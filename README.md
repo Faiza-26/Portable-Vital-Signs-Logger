@@ -1,5 +1,4 @@
 # Portable Vital Signs Logger
-
 An Arduino-based embedded systems project that measures heart rate and blood oxygen using a MAX30102 sensor, displays the data on an OLED display, logs readings to an SD card, and analyzes the data using Python.
 
 ### Hardware
@@ -14,7 +13,8 @@ An Arduino-based embedded systems project that measures heart rate and blood oxy
 - ✅ Live sensor communication
 - ✅ Real-time Red, IR, and Green values displayed
 
-## Status and Current Progress
+## Current Prototype
+The current prototype integrates an Arduino Nano, SSD1306 OLED display, and MAX30102 optical sensor over a shared I²C bus. The system initializes through a custom startup interface before displaying live Red, IR, and Green sensor readings in real time
 
 ### In Progress
 - ⏳ Heart rate (BPM) calculation
